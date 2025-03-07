@@ -4,44 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 - Page Not Found</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            color: white;
+        }
+
+        body {
+            height: 100vh;
+            background-color: black;
+            overflow: hidden;
+            margin: 0;
+            position: fixed;
+            width: 100%;
+        }
+
         .error-container {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            height: 100vh;
             text-align: center;
             padding: 20px;
-            background-color: #fafafa;
         }
         
         .error-code {
             font-size: 6rem;
-            font-weight: bold;
+            font-weight: 400;
             margin-bottom: 1rem;
         }
         
         .error-message {
             font-size: 1.5rem;
+            font-weight: 300;
             margin-bottom: 2rem;
         }
         
         .home-link {
-            color: #000;
+            color: white;
             text-decoration: none;
             padding: 10px 20px;
-            border: 2px solid #000;
+            border: 2px solid white;
             transition: all 0.3s ease;
+            font-weight: 300;
         }
         
         .home-link:hover {
-            background-color: #000;
-            color: #fff;
+            background-color: #1a1a1a;
+        }
+
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 4rem;
+            }
+            
+            .error-message {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
@@ -49,7 +76,7 @@
     <div class="error-container">
         <div class="error-code">404</div>
         <div class="error-message">Page not found</div>
-        <a href="/" class="home-link">Return Home</a>
+        <a href="/" class="home-link">Return home</a>
     </div>
 </body>
 </html>

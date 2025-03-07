@@ -89,10 +89,10 @@ body {
     }
 
     .person.active .name {
-        transform: translateY(-10px);
+        transform: translateY(-15px);
     }
 
     .person.active .contact-info {
-        transform: translateY(10px);
+        transform: translateY(15px);
     }
 }
