@@ -58,6 +58,11 @@ body {
     font-weight: 300;
 }
 
+.contact-info a {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
 .person.active .name {
     transform: translateY(-20px);
 }
