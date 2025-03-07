@@ -55,6 +55,7 @@ body {
     transition: all 0.3s ease;
     text-align: center;
     pointer-events: none;
+    font-weight: 300;
 }
 
 .person.active .name {
