@@ -7,13 +7,18 @@
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     background-color: black;
+    overflow: hidden;
+    margin: 0;
+    position: fixed;
+    width: 100%;
 }
 
 .container {
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
 }
 
 .person {
@@ -40,7 +45,7 @@ body {
 
 .name {
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .contact-info {
@@ -65,9 +70,28 @@ body {
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
+        height: 100vh;
+        position: fixed;
+        width: 100%;
     }
 
     .person {
-        min-height: 50vh;
+        height: 50vh;
+        min-height: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .person.active .name {
+        transform: translateY(-10px);
+    }
+
+    .person.active .contact-info {
+        transform: translateY(10px);
     }
 }
